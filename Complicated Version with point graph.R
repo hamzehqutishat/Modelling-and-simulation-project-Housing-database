@@ -37,15 +37,15 @@ geom_boxplot()
 
 ggplot(data=Sacramentorealestatetransactions,aes('x || y',x=sq_ft,y=price))+
 geom_point()+
-geom_smooth(method = "lm",se="F")
+geom_smooth(method = "lm",se=F)
 
 ggplot(data=Sacramentorealestatetransactions,aes('x || y',x=sq_ft,y=price))+
 geom_point(col="purple")+
-geom_smooth(method = "lm",se="F")
+geom_smooth(method = "lm",se=F)
 
 ggplot(data=Sacramentorealestatetransactions,aes('x || y',x=sq_ft,y=price,col=factor(bedrooms)))+
 geom_point()+
-geom_smooth(method = "lm",se="F")+
+geom_smooth(method = "lm",se=F)+
 labs(col="bedrooms")
 
 summary(Sacramentorealestatetransactions)
